@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build:web",
-  "installCommand": "npm install",
+  "installCommand": "npm install --workspace @uaiw/web --include-workspace-root",
   "outputDirectory": "apps/web/.next",
   "framework": "nextjs",
   "env": {
