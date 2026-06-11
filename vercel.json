@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build --workspace @uaiw/web",
+  "installCommand": "npm install",
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://your-api-host.example.com"
+  }
+}

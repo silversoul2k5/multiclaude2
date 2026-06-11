@@ -1,0 +1,35 @@
+@import "highlight.js/styles/base16/ashes.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Satoshi", ui-sans-serif, system-ui;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(240, 106, 61, 0.22), transparent 30rem),
+    radial-gradient(circle at 90% 20%, rgba(142, 168, 106, 0.18), transparent 26rem),
+    linear-gradient(135deg, #11120f 0%, #151b16 46%, #090b0a 100%);
+  color: #d8d2c4;
+}
+
+::selection {
+  background: rgba(240, 106, 61, 0.45);
+}
+
+.glass {
+  border: 1px solid rgba(216, 210, 196, 0.12);
+  background: rgba(18, 24, 21, 0.72);
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(18px);
+}

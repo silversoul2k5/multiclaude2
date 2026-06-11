@@ -1,0 +1,20 @@
+{
+  "name": "unified-ai-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Self-hosted unified AI workspace with provider switching and local memory.",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @uaiw/api & npm run dev --workspace @uaiw/web",
+    "build": "npm run build --workspace @uaiw/api && npm run build --workspace @uaiw/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "start": "npm run start --workspace @uaiw/api & npm run start --workspace @uaiw/web"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}
