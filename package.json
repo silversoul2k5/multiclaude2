@@ -10,9 +10,15 @@
   "scripts": {
     "dev": "npm run dev --workspace @uaiw/api & npm run dev --workspace @uaiw/web",
     "build": "npm run build --workspace @uaiw/api && npm run build --workspace @uaiw/web",
+    "build:web": "npm run build --workspace @uaiw/web",
     "lint": "npm run lint --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "start": "npm run start --workspace @uaiw/api & npm run start --workspace @uaiw/web"
+  },
+  "dependencies": {
+    "next": "^15.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "engines": {
     "node": ">=20.11.0"
